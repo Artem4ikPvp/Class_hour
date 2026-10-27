@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Мои заявки | Учебный час</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Oswald:400,300,700" rel="stylesheet">
+</head>
+<body>
+
+  <section class="head">
+    <a class="header__logo" href="index.html">
+      <img src="image/book.png" width="40" height="40" alt="Логотип">
+      Учебный час
+    </a>
+    <a class="button__login" href="create.html">Новая заявка</a>
+  </section>
+
+  <section class="admin">
+    <div class="admin__container">
+      <h1 class="admin__title">Мои заявки</h1>
+      <p class="admin__count">Всего заявок: <span>5</span></p>
+
+      <div class="admin__filters">
+        <input type="text" class="data admin__search" placeholder="Поиск по курсу...">
+        <select class="data admin__select">
+          <option value="">Все статусы</option>
+          <option value="wait">Ожидает</option>
+          <option value="ok">Одобрена</option>
+          <option value="no">Отклонена</option>
+        </select>
+        <select class="data admin__select">
+          <option value="">Все курсы</option>
+          <option>Программирование</option>
+          <option>Управление проектами</option>
+          <option>Графический дизайн</option>
+        </select>
+        <button class="button__login admin__reset">Сбросить</button>
+      </div>
+      <div class="admin__table-wrap">
+        <table class="admin__table">
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Курс</th>
+              <th>Дата подачи</th>
+              <th>Статус</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>#128</td>
+              <td>Программирование</td>
+              <td>15.05.2024</td>
+              <td><span class="order-card__status order-card__status--wait">Ожидает</span></td>
+            </tr>
+            <tr>
+              <td>#119</td>
+              <td>Управление проектами</td>
+              <td>02.05.2024</td>
+              <td><span class="order-card__status order-card__status--ok">Одобрена</span></td>
+            </tr>
+            <tr>
+              <td>#110</td>
+              <td>Графический дизайн</td>
+              <td>28.04.2024</td>
+              <td><span class="order-card__status order-card__status--no">Отклонена</span></td>
+            </tr>
+            <tr>
+              <td>#105</td>
+              <td>Программирование</td>
+              <td>12.04.2024</td>
+              <td><span class="order-card__status order-card__status--ok">Одобрена</span></td>
+            </tr>
+            <tr>
+              <td>#098</td>
+              <td>Управление проектами</td>
+              <td>03.04.2024</td>
+              <td><span class="order-card__status order-card__status--wait">Ожидает</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+  <footer class="footer">
+    <div class="footer__container">
+      <a class="footer__logo" href="index.html">
+        <img src="image/book.png" width="26" height="26" alt="Логотип">
+        Учебный час
+      </a>
+      <p class="footer__text">© 2025 Учебный час. Все права защищены.</p>
+    </div>
+  </footer>
+</body>
+</html>
